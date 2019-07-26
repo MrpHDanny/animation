@@ -6,17 +6,18 @@ const cloud1 = document.querySelector(".cloud1");
 const cloud2 = document.querySelector(".cloud2");
 const cloud3 = document.querySelector(".cloud3");
 const heading = document.querySelector(".heading");
-
+const container = document.querySelector(".container");
 const tl = new TimelineLite();
 
-tl.fromTo(
-  stars,
-  2.5,
-  {
-    y: "100%"
-  },
-  { y: "0%", ease: Power4.easeOut }
-)
+tl.fromTo(container, 0.2, { opacity: 0 }, { opacity: 1 })
+  .fromTo(
+    stars,
+    2.5,
+    {
+      y: "100%"
+    },
+    { y: "0%", ease: Power4.easeOut }
+  )
   .fromTo(
     hill,
     1,
