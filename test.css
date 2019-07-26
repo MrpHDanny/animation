@@ -10,6 +10,10 @@ body {
     overflow: hidden;
 }
 
+.container {
+    opacity: 0;
+}
+
 .container div {
     position: absolute;
     top: 0;
@@ -56,6 +60,7 @@ body {
 }
 
 h1 {
+    opacity: 0;
     font-family: 'nunito', 'sans-serif';
     text-align: center;
     font-size: 7em;
